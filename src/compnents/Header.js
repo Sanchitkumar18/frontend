@@ -10,7 +10,7 @@ const Header = () => {
         getAllMovies().then((data)=>setMovies(data.movies)).catch((err)=>console.log(err))
     },[])
     return (
-        <AppBar sx={{bgcolor:"#434547"}}>
+        <AppBar position="sticky"  sx={{bgcolor:"#434547"}}>
             <Toolbar>
                 <Box width={'20%'}>
                     <LocalMoviesIcon />
